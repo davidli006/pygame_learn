@@ -23,8 +23,16 @@ text = font.render("hello word， 你好世界", True, (90,90,90), (255, 0, 0))
 window.blit(text, (0, 0))
 
 # 4. 文字的操作
+## -1 获取大小
+w, h = text.get_size()
+window.blit(text, (400-w, 600-h))
 
+## -2 缩放和旋转
+new_1 = pygame.transform.scale(text, (200, 50))
+window.blit(new_1, (0, 60))
 
+new_2 = pygame.transform.rotozoom(text, 90, 1.5)
+window.blit(new_2, (0, 120))
 
 
 pygame.display.flip()
