@@ -14,7 +14,7 @@ window.fill((255, 255, 255))
 # =============显示文字==============
 # 1. 创建字体对象
 ## Font(字体文件路径， 字号)
-font = pygame.font.Font("../files/font/turok.ttf", 30)
+font = pygame.font.Font("../files/font/simkai.ttf", 30)
 
 # 2. 创建文字对象
 ## render(文字内容， True, 字体颜色， 背景颜色)
